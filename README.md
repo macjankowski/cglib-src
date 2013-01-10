@@ -1,4 +1,4 @@
-cglib-src
-=========
+cglib-wjug
+==========
 
-sources from presentation
+Source code used during presentation

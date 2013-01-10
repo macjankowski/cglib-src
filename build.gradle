@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.6
+def localMavenRepo = "file:C:/Users/mac/.m2/repository"
+
+repositories { 
+	mavenCentral() 
+	
+	maven {
+		url localMavenRepo
+	}
+}
+
+
+
+dependencies {
+	compile 'cglib:cglib:2.2.2'
+	compile 'asm:asm-all:3.3.1'
+	compile 'org.apache.ant:ant:1.8.4'
+	compile 'com.google.caliper:caliper:1.0-SNAPSHOT'
+	testCompile group: 'junit', name: 'junit', version: '4.8.2'
+}
